@@ -1,0 +1,50 @@
+Code Description
+RC_29 DOB not matched to a DOB at the credit bureau
+RC_36 OFA warnings present for the bank details entered.
+RC_42 Bank account recently opened within 90 days – CAUTION.
+RC_49 Possible Fraud: Amber Alert
+RC_50 Possible Fraud: Red Alert
+RC_55 TAC FAILED: Income validation was missing, unstable or low confidence (TAC = Red or stability < 6)
+RC_60 BANK CHECK FAILED: Call validate bank check not verified
+RC_72 Any deceased flag (matching DOB of applicant)
+Code Description
+RC_24 Applicants total in Zopa would exceed £25,000
+RC_25 Applicant’s Name & DOB matches a pending borrower
+Code Description
+RC_02 Bank account number matches to record on database but different user name, excluding joint account with partner match.
+RC_04 Applicant has less than 2 active credit INSIGHT records at the current address
+RC_37 This member has used the name of a director of a limited company.
+RC_15 CIFAS flag present for applicant or person sharing same surname and/or date of birth
+RC_31 Suspected fraud: Mobile number used in a previous application by a different member with a different forename and surname
+RC_38 Suspected fraud: Zopa UID matches a fraud case
+RC_39 Suspected fraud: Zopa UID was used in a previous application by a different member
+RC_63 PEP: Applicant appears on the PEP list
+RC_64 Sanctions: Applicant appears on the sanctions list
+RC_71 Suspected fraud: Sort code used in previous fraudulent application
+Code Description
+RC_06 Applicant not matched at all addresses from last 3 years
+RC_07 Applicant has a forward address associated with current address
+RC_21 Financial associate at any address has current arrears/arrangements or defaults within the last 12 months
+RC_48 DT < -£1000
+RC_52 Low rent (<= £300) and Low DI (<= £700)
+RC_65 Customer has a debt consolidation loan with DI < £400
+RC_66 First name / last name not matched to at least 1 live credit item at current address
+RC_74 Disposable income <400 on account of mortgage repayment per person on bureau
+RC_76 Applicant declared mortgage on application, and no mortgage was found on applicant or associate's bureaux file and disposable income is <= 700
+RC_81 Disposable income < £400 and > -£1,000
+RC_82 No ID CAIS at current address – check that applicant passes ID
+RC_96 Broker applicant has previously auto-declined loan(s)
+Code Description
+RC_46 LTDI > 60%
+RC_47 DTI > 100%
+RC_51 (Call credit unsecured balances - Equifax unsecured balances) > £2,000
+RC_58 Credit card or current account over limit and excluding accounts with £0 credit limit
+RC_59 High Risk market and Large Loan (C1 > £18,000 / D > £12,000 / E > £8,000)
+RC_61 Scored with insufficient bureau information (full underwriting required)
+RC_67 C1, D, E, S customers who have never had a mortgage and applied for more than 3 times the value of their current limits + unsecured debt
+RC_68 Customers who have obtained more than £5,000 of unsecured debt in the last 3 months
+RC_70 Short term loan (<=12 months) less than £2,000 in applicants name
+RC_73 Applicant with <=£20,000 income, has 3 active CAIS, who has never had a mortgage, and applied for more than 2 times the value of their current limits + unsecured debt
+RC_75 Applicant has one or more missed payments (in the last 6 months) or is in arrangements on their existing Zopa loans, or has an arrears start date in the last 42 days
+RC_77 <= 2 active CAIS, never had a mortgage & applied for more than their current limit + unsecured debt
+RC_79 Any active CAIS that have been in arrangement within the last 12 months

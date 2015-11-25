@@ -1,0 +1,95 @@
+Code Description
+DC_01 Filed for insolvency in last 6 years at any address
+DC_02 CCJ in last 1 year - any address
+DC_03 CCJ £250 or more at any address in last 6 years
+DC_05 3+ Accounts currently in default (all accounts) - all addresses
+DC_07 3 or more payments down on the last 3 codes (payment history), within the last 3 months, excluding open defaults on any active account, excluding telco, mail and utilities
+DC_08 More than 5 total credit searches excl. communications, mail order and public utility at any address - last 3 months
+DC_10 2 or more Debt collector searches last 24 months
+DC_11 Multiple 1+ on CC & unsec. loan accounts - last 6 months
+DC_12 Applicant with 1 or more unsecured loan(s), excluding open defaults, which is 3+ down within last 1 month
+DC_13 More than 100% utilisation on an active credit card (with limit >= £1,500) – all addresses
+DC_14 2 or more missed mortgage payments - last 12 months
+DC_15 Mortgage arrears in last month at current address
+DC_16 Gone away flag at current address
+DC_19 Less than 20 years of age
+DC_20 Employment status is Unemployed, Student, Homemaker
+DC_21 Applicant has gross annual salary less than £12,000
+DC_23 High LDTI > 100%
+DC_24 Unsecured DTI >= 150%
+DC_27 Recent application (last 6 months) either approved or declined
+DC_31 Disposable income < £200 and > -£1,000
+DC_36 Active/recent (within 3 months) payday/home lending loans on Equifax or home credit/advance against income on Call Credit Report, excluding open defaults for applicant only
+DC_38 E Market - Greater than 36 months
+DC_39 E Market - More than £15,000
+DC_40 Acceptable CAIS accounts with defaults > £100 over the last 12 months
+DC_41 Not on electoral role, no active CAIS at current address and not a homeowner
+DC_43 Non traditional bank account
+DC_44 Consolidation; disposable income less than £0 pre-consolidation of new Zopa loan
+DC_45 Applicant has active acceptable CAIS in arrangements within the last 3 months
+DC_46 Applicant had an arrangement on a mortgage within the last 12 months
+Code Description
+MC_03 Applicant not matched at current address (Applicant not on VR and has no INSIGHT).
+MC_17 Time in job is < 4 months.
+MC_32 Suspected fraud: IP address used in a previous application by a different member.
+MC_34 Same forename and surname on Voter Roll
+MC_35 Home number entered does not match the number from Equifax
+MC_56 QuickPay Requested
+MC_78 Applicant has had a default on any credit CAIS past and present, all addresses
+MC_80 The document is suspicious
+Code Description
+RC_02 Bank account number matches to record on database but different user name, excluding joint account with partner match.
+RC_04 Applicant has less than 2 active credit INSIGHT records at the current address
+RC_06 Applicant not matched at all addresses from last 3 years
+RC_07 Applicant has a forward address associated with current address
+RC_15 CIFAS flag present for applicant or person sharing same surname and/or date of birth
+RC_21 Financial associate at any address has current arrears/arrangements or defaults within the last 12 months
+RC_24 Applicants total in Zopa would exceed £25,000
+RC_25 Applicant’s Name & DOB matches a pending borrower
+RC_29 DOB not matched to a DOB at the credit bureau
+RC_31 Suspected fraud: Mobile number used in a previous application by a different member with a different forename and surname
+RC_36 OFA warnings present for the bank details entered.
+RC_37 This member has used the name of a director of a limited company.
+RC_38 Suspected fraud: Zopa UID matches a fraud case
+RC_39 Suspected fraud: Zopa UID was used in a previous application by a different member
+RC_42 Bank account recently opened within 90 days – CAUTION.
+RC_46 LTDI > 60%
+RC_47 DTI > 100%
+RC_48 DT < -£1000
+RC_49 Possible Fraud: Amber Alert
+RC_50 Possible Fraud: Red Alert
+RC_51 (Call credit unsecured balances - Equifax unsecured balances) > £2,000
+RC_52 Low rent (<= £300) and Low DI (<= £700)
+RC_55 TAC FAILED: Income validation was missing, unstable or low confidence (TAC = Red or stability < 6)
+RC_58 Credit card or current account over limit and excluding accounts with £0 credit limit
+RC_59 High Risk market and Large Loan (C1 > £18,000 / D > £12,000 / E > £8,000)
+RC_60 BANK CHECK FAILED: Call validate bank check not verified
+RC_61 Scored with insufficient bureau information (full underwriting required)
+RC_63 PEP: Applicant appears on the PEP list
+RC_64 Sanctions: Applicant appears on the sanctions list
+RC_65 Customer has a debt consolidation loan with DI < £400
+RC_66 First name / last name not matched to at least 1 live credit item at current address
+RC_67 C1, D, E, S customers who have never had a mortgage and applied for more than 3 times the value of their current limits + unsecured debt
+RC_68 Customers who have obtained more than £5,000 of unsecured debt in the last 3 months
+RC_70 Short term loan (<=12 months) less than £2,000 in applicants name
+RC_71 Suspected fraud: Sort code used in previous fraudulent application
+RC_72 Any deceased flag (matching DOB of applicant)
+RC_73 Applicant with <=£20,000 income, has 3 active CAIS, who has never had a mortgage, and applied for more than 2 times the value of their current limits + unsecured debt
+RC_74 Disposable income <400 on account of mortgage repayment per person on bureau
+RC_75 Applicant has one or more missed payments (in the last 6 months) or is in arrangements on their existing Zopa loans, or has an arrears start date in the last 42 days
+RC_76 Applicant declared mortgage on application, and no mortgage was found on applicant or associate's bureaux file and disposable income is <= 700
+RC_77 <= 2 active CAIS, never had a mortgage & applied for more than their current limit + unsecured debt
+RC_79 Any active CAIS that have been in arrangement within the last 12 months
+RC_81 Disposable income < £400 and > -£1,000
+RC_96 Broker applicant has previously auto-declined loan(s)
+Code Description Reason
+DC_11T Multiple 1+ on credit CAIS in the last 6 months Exempt from classification
+DC_47 Freedom finance customers (over-indebtedness or DTI/HDTI or thin file) criteria not met Exempt from classification
+DC_48 Applicant fails Zopa ID criteria – less than two ID CAIS (one at current address within last 6 months) Exempt from classification
+DC_49 Freedom Finance customers with <= 2 active CAIS, never had a mortgage & applied for more than their current limit + unsecured debt Exempt from classification
+MC_57 Declared mortgage repayment does not match application. The difference between credit file and declared mortgage amounts is more than 10% per person Obsolete
+RC_19 NOC flag present Obsolete
+RC_26 Off Voters Roll at the current address and there is active INSIGHT within 2 months at the current address. Obsolete
+RC_35 Home number entered does not match the number from Equifax Obsolete
+RC_53 Loan purpose is Home Improvements / Applicant is not a Homeowner and loan size >= £5000 Obsolete
+RC_82 No ID CAIS at current address – check that applicant passes ID Exempt from classification
