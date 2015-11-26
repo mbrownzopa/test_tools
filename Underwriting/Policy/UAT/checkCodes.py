@@ -38,7 +38,13 @@ if x != "1.0":
     print("mismatch")
     payload = {'color': 'red', 'message': 'UAT UW Policy Rules check ran and do not match @all', 'notify': 'true', 'message_format': 'text'}
     r = requests.post('https://api.hipchat.com/v2/room/2200616/notification?auth_token=g7wdJ7Qyijpd08iLTEdZH6Q74LgUYN6UQkG3eYQS', data=payload)
-    os.system("winmergeu expected_results.txt actual_results.txt")
+    os.system("diff -a --suppress-common-lines -y expected_results.txt actual_results.txt > tmp.txt")
+    reader = open("tmp.txt")
+    diff = reader.read()
+    payload = {'color': 'yellow', 'message': diff, 'notify': 'true', 'message_format': 'text'}
+    r = requests.post('https://api.hipchat.com/v2/room/2200616/notification?auth_token=g7wdJ7Qyijpd08iLTEdZH6Q74LgUYN6UQkG3eYQS', data=payload)
+    os.system("rm tmp.txt")
+    #os.system("winmergeu expected_results.txt actual_results.txt")
 else:
     payload = {'color': 'green', 'message': 'UAT UW Policy Rules check ran and match', 'notify': 'true', 'message_format': 'text'}
     r = requests.post('https://api.hipchat.com/v2/room/2200616/notification?auth_token=g7wdJ7Qyijpd08iLTEdZH6Q74LgUYN6UQkG3eYQS', data=payload)
